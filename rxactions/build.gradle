@@ -8,7 +8,6 @@ apply plugin: 'com.android.library'
 
 dependencies {
     compile rootProject.ext.rxJava
-    compile rootProject.ext.rxAndroid
     compile rootProject.ext.supportAnnotations
 }
 

@@ -10,9 +10,6 @@ ext {
 
     supportTestRunner = 'com.android.support.test:runner:0.4.1'
     supportTestRules = 'com.android.support.test:rules:0.4.1'
-    supportTestEspresso = 'com.android.support.test.espresso:espresso-core:2.2.1'
-    supportTestEspressoContrib = 'com.android.support.test.espresso:espresso-contrib:2.2.1'
     rxJava = 'io.reactivex:rxjava:1.1.0'
-    rxAndroid = 'io.reactivex:rxandroid:1.1.0'
     junit = 'junit:junit:4.12'
 }
