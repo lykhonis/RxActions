@@ -8,7 +8,7 @@ Download
 
 WARNING: Not available yet, pending on sonatype
 ```groovy
-compile 'com.vladimirlichonos.rxactions:rxactions:0.0.1'
+compile 'com.vladimirlichonos.rxactions:rxactions:0.1.0'
 ```
 
 License
