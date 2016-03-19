@@ -1,7 +1,7 @@
 RxActions
 =========
 
-RxJava static helper methods for combining multiple actions into single action stream. Action1s is used to set properties on multiple Views with [RxBinding][rxbinding].
+RxJava static helper methods for combining multiple actions into single action stream.
 
 Download
 --------
