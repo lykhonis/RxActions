@@ -11,8 +11,6 @@ Platform bindings:
 compile 'com.vladimirlichonos.rxactions:rxactions:0.0.1'
 ```
 
-Snapshots of the development version are available in [Sonatype's `snapshots` repository][snap].
-
 License
 -------
 
@@ -34,5 +32,4 @@ License
 
 
 
- [snap]: https://oss.sonatype.org/content/repositories/snapshots/
  [rxbinding]: https://github.com/JakeWharton/RxBinding
