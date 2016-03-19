@@ -1,0 +1,24 @@
+subprojects {
+    buildscript {
+        repositories {
+            jcenter()
+        }
+    }
+    repositories {
+        mavenCentral()
+    }
+
+    group = GROUP
+    version = VERSION_NAME
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.9'
+    distributionUrl = "https://services.gradle.org/distributions/gradle-${gradleVersion}-all.zip"
+}
+
+apply from: rootProject.file('dependencies.gradle')
