@@ -24,7 +24,7 @@ public class Actions {
      * Combines provided actions into a single action stream
      *
      * @param a1 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -37,7 +37,7 @@ public class Actions {
      *
      * @param a1 Action
      * @param a2 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -57,7 +57,7 @@ public class Actions {
      * @param a1 Action
      * @param a2 Action
      * @param a3 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -79,7 +79,7 @@ public class Actions {
      * @param a2 Action
      * @param a3 Action
      * @param a4 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -103,7 +103,7 @@ public class Actions {
      * @param a3 Action
      * @param a4 Action
      * @param a5 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -129,7 +129,7 @@ public class Actions {
      * @param a4 Action
      * @param a5 Action
      * @param a6 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -157,7 +157,7 @@ public class Actions {
      * @param a5 Action
      * @param a6 Action
      * @param a7 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -187,7 +187,7 @@ public class Actions {
      * @param a6 Action
      * @param a7 Action
      * @param a8 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -219,7 +219,7 @@ public class Actions {
      * @param a7 Action
      * @param a8 Action
      * @param a9 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -244,7 +244,7 @@ public class Actions {
      * Combines provided actions into a single action stream
      *
      * @param a Actions
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -264,7 +264,7 @@ public class Actions {
      * Combines provided actions into a single action stream
      *
      * @param a1 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -277,7 +277,7 @@ public class Actions {
      *
      * @param a1 Action
      * @param a2 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -297,7 +297,7 @@ public class Actions {
      * @param a1 Action
      * @param a2 Action
      * @param a3 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -319,7 +319,7 @@ public class Actions {
      * @param a2 Action
      * @param a3 Action
      * @param a4 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -343,7 +343,7 @@ public class Actions {
      * @param a3 Action
      * @param a4 Action
      * @param a5 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -369,7 +369,7 @@ public class Actions {
      * @param a4 Action
      * @param a5 Action
      * @param a6 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -397,7 +397,7 @@ public class Actions {
      * @param a5 Action
      * @param a6 Action
      * @param a7 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -427,7 +427,7 @@ public class Actions {
      * @param a6 Action
      * @param a7 Action
      * @param a8 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -459,7 +459,7 @@ public class Actions {
      * @param a7 Action
      * @param a8 Action
      * @param a9 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -484,7 +484,7 @@ public class Actions {
      * Combines provided actions into a single action stream
      *
      * @param a Actions
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @SafeVarargs
     @CheckResult
@@ -505,7 +505,7 @@ public class Actions {
      * Combines provided actions into a single action stream
      *
      * @param a1 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -518,7 +518,7 @@ public class Actions {
      *
      * @param a1 Action
      * @param a2 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -538,7 +538,7 @@ public class Actions {
      * @param a1 Action
      * @param a2 Action
      * @param a3 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -560,7 +560,7 @@ public class Actions {
      * @param a2 Action
      * @param a3 Action
      * @param a4 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -584,7 +584,7 @@ public class Actions {
      * @param a3 Action
      * @param a4 Action
      * @param a5 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -610,7 +610,7 @@ public class Actions {
      * @param a4 Action
      * @param a5 Action
      * @param a6 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -638,7 +638,7 @@ public class Actions {
      * @param a5 Action
      * @param a6 Action
      * @param a7 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -668,7 +668,7 @@ public class Actions {
      * @param a6 Action
      * @param a7 Action
      * @param a8 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -700,7 +700,7 @@ public class Actions {
      * @param a7 Action
      * @param a8 Action
      * @param a9 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -725,7 +725,7 @@ public class Actions {
      * Combines provided actions into a single action stream
      *
      * @param a Actions
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @SafeVarargs
     @CheckResult
@@ -746,7 +746,7 @@ public class Actions {
      * Combines provided actions into a single action stream
      *
      * @param a1 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -759,7 +759,7 @@ public class Actions {
      *
      * @param a1 Action
      * @param a2 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -779,7 +779,7 @@ public class Actions {
      * @param a1 Action
      * @param a2 Action
      * @param a3 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -801,7 +801,7 @@ public class Actions {
      * @param a2 Action
      * @param a3 Action
      * @param a4 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -825,7 +825,7 @@ public class Actions {
      * @param a3 Action
      * @param a4 Action
      * @param a5 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -851,7 +851,7 @@ public class Actions {
      * @param a4 Action
      * @param a5 Action
      * @param a6 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -879,7 +879,7 @@ public class Actions {
      * @param a5 Action
      * @param a6 Action
      * @param a7 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -909,7 +909,7 @@ public class Actions {
      * @param a6 Action
      * @param a7 Action
      * @param a8 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -941,7 +941,7 @@ public class Actions {
      * @param a7 Action
      * @param a8 Action
      * @param a9 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -966,7 +966,7 @@ public class Actions {
      * Combines provided actions into a single action stream
      *
      * @param a Actions
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @SafeVarargs
     @CheckResult
@@ -987,7 +987,7 @@ public class Actions {
      * Combines provided actions into a single action stream
      *
      * @param a1 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1000,7 +1000,7 @@ public class Actions {
      *
      * @param a1 Action
      * @param a2 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1020,7 +1020,7 @@ public class Actions {
      * @param a1 Action
      * @param a2 Action
      * @param a3 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1042,7 +1042,7 @@ public class Actions {
      * @param a2 Action
      * @param a3 Action
      * @param a4 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1066,7 +1066,7 @@ public class Actions {
      * @param a3 Action
      * @param a4 Action
      * @param a5 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1092,7 +1092,7 @@ public class Actions {
      * @param a4 Action
      * @param a5 Action
      * @param a6 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1120,7 +1120,7 @@ public class Actions {
      * @param a5 Action
      * @param a6 Action
      * @param a7 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1150,7 +1150,7 @@ public class Actions {
      * @param a6 Action
      * @param a7 Action
      * @param a8 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1182,7 +1182,7 @@ public class Actions {
      * @param a7 Action
      * @param a8 Action
      * @param a9 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1207,7 +1207,7 @@ public class Actions {
      * Combines provided actions into a single action stream
      *
      * @param a Actions
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @SafeVarargs
     @CheckResult
@@ -1228,7 +1228,7 @@ public class Actions {
      * Combines provided actions into a single action stream
      *
      * @param a1 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1241,7 +1241,7 @@ public class Actions {
      *
      * @param a1 Action
      * @param a2 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1261,7 +1261,7 @@ public class Actions {
      * @param a1 Action
      * @param a2 Action
      * @param a3 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1283,7 +1283,7 @@ public class Actions {
      * @param a2 Action
      * @param a3 Action
      * @param a4 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1307,7 +1307,7 @@ public class Actions {
      * @param a3 Action
      * @param a4 Action
      * @param a5 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1333,7 +1333,7 @@ public class Actions {
      * @param a4 Action
      * @param a5 Action
      * @param a6 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1361,7 +1361,7 @@ public class Actions {
      * @param a5 Action
      * @param a6 Action
      * @param a7 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1391,7 +1391,7 @@ public class Actions {
      * @param a6 Action
      * @param a7 Action
      * @param a8 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1423,7 +1423,7 @@ public class Actions {
      * @param a7 Action
      * @param a8 Action
      * @param a9 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1448,7 +1448,7 @@ public class Actions {
      * Combines provided actions into a single action stream
      *
      * @param a Actions
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @SafeVarargs
     @CheckResult
@@ -1469,7 +1469,7 @@ public class Actions {
      * Combines provided actions into a single action stream
      *
      * @param a1 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1482,7 +1482,7 @@ public class Actions {
      *
      * @param a1 Action
      * @param a2 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1502,7 +1502,7 @@ public class Actions {
      * @param a1 Action
      * @param a2 Action
      * @param a3 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1524,7 +1524,7 @@ public class Actions {
      * @param a2 Action
      * @param a3 Action
      * @param a4 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1548,7 +1548,7 @@ public class Actions {
      * @param a3 Action
      * @param a4 Action
      * @param a5 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1574,7 +1574,7 @@ public class Actions {
      * @param a4 Action
      * @param a5 Action
      * @param a6 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1602,7 +1602,7 @@ public class Actions {
      * @param a5 Action
      * @param a6 Action
      * @param a7 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1632,7 +1632,7 @@ public class Actions {
      * @param a6 Action
      * @param a7 Action
      * @param a8 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1664,7 +1664,7 @@ public class Actions {
      * @param a7 Action
      * @param a8 Action
      * @param a9 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1689,7 +1689,7 @@ public class Actions {
      * Combines provided actions into a single action stream
      *
      * @param a Actions
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @SafeVarargs
     @CheckResult
@@ -1710,7 +1710,7 @@ public class Actions {
      * Combines provided actions into a single action stream
      *
      * @param a1 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1723,7 +1723,7 @@ public class Actions {
      *
      * @param a1 Action
      * @param a2 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1743,7 +1743,7 @@ public class Actions {
      * @param a1 Action
      * @param a2 Action
      * @param a3 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1765,7 +1765,7 @@ public class Actions {
      * @param a2 Action
      * @param a3 Action
      * @param a4 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1789,7 +1789,7 @@ public class Actions {
      * @param a3 Action
      * @param a4 Action
      * @param a5 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1815,7 +1815,7 @@ public class Actions {
      * @param a4 Action
      * @param a5 Action
      * @param a6 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1843,7 +1843,7 @@ public class Actions {
      * @param a5 Action
      * @param a6 Action
      * @param a7 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1873,7 +1873,7 @@ public class Actions {
      * @param a6 Action
      * @param a7 Action
      * @param a8 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1905,7 +1905,7 @@ public class Actions {
      * @param a7 Action
      * @param a8 Action
      * @param a9 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1930,7 +1930,7 @@ public class Actions {
      * Combines provided actions into a single action stream
      *
      * @param a Actions
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @SafeVarargs
     @CheckResult
@@ -1951,7 +1951,7 @@ public class Actions {
      * Combines provided actions into a single action stream
      *
      * @param a1 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1964,7 +1964,7 @@ public class Actions {
      *
      * @param a1 Action
      * @param a2 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -1984,7 +1984,7 @@ public class Actions {
      * @param a1 Action
      * @param a2 Action
      * @param a3 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -2006,7 +2006,7 @@ public class Actions {
      * @param a2 Action
      * @param a3 Action
      * @param a4 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -2030,7 +2030,7 @@ public class Actions {
      * @param a3 Action
      * @param a4 Action
      * @param a5 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -2056,7 +2056,7 @@ public class Actions {
      * @param a4 Action
      * @param a5 Action
      * @param a6 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -2084,7 +2084,7 @@ public class Actions {
      * @param a5 Action
      * @param a6 Action
      * @param a7 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -2114,7 +2114,7 @@ public class Actions {
      * @param a6 Action
      * @param a7 Action
      * @param a8 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -2146,7 +2146,7 @@ public class Actions {
      * @param a7 Action
      * @param a8 Action
      * @param a9 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -2171,7 +2171,7 @@ public class Actions {
      * Combines provided actions into a single action stream
      *
      * @param a Actions
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @SafeVarargs
     @CheckResult
@@ -2192,7 +2192,7 @@ public class Actions {
      * Combines provided actions into a single action stream
      *
      * @param a1 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -2205,7 +2205,7 @@ public class Actions {
      *
      * @param a1 Action
      * @param a2 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -2225,7 +2225,7 @@ public class Actions {
      * @param a1 Action
      * @param a2 Action
      * @param a3 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -2247,7 +2247,7 @@ public class Actions {
      * @param a2 Action
      * @param a3 Action
      * @param a4 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -2271,7 +2271,7 @@ public class Actions {
      * @param a3 Action
      * @param a4 Action
      * @param a5 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -2297,7 +2297,7 @@ public class Actions {
      * @param a4 Action
      * @param a5 Action
      * @param a6 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -2325,7 +2325,7 @@ public class Actions {
      * @param a5 Action
      * @param a6 Action
      * @param a7 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -2355,7 +2355,7 @@ public class Actions {
      * @param a6 Action
      * @param a7 Action
      * @param a8 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -2387,7 +2387,7 @@ public class Actions {
      * @param a7 Action
      * @param a8 Action
      * @param a9 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -2412,7 +2412,7 @@ public class Actions {
      * Combines provided actions into a single action stream
      *
      * @param a Actions
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @SafeVarargs
     @CheckResult
@@ -2433,7 +2433,7 @@ public class Actions {
      * Combines provided actions into a single action stream
      *
      * @param a1 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -2446,7 +2446,7 @@ public class Actions {
      *
      * @param a1 Action
      * @param a2 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -2466,7 +2466,7 @@ public class Actions {
      * @param a1 Action
      * @param a2 Action
      * @param a3 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -2488,7 +2488,7 @@ public class Actions {
      * @param a2 Action
      * @param a3 Action
      * @param a4 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -2512,7 +2512,7 @@ public class Actions {
      * @param a3 Action
      * @param a4 Action
      * @param a5 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -2538,7 +2538,7 @@ public class Actions {
      * @param a4 Action
      * @param a5 Action
      * @param a6 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -2566,7 +2566,7 @@ public class Actions {
      * @param a5 Action
      * @param a6 Action
      * @param a7 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -2596,7 +2596,7 @@ public class Actions {
      * @param a6 Action
      * @param a7 Action
      * @param a8 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -2628,7 +2628,7 @@ public class Actions {
      * @param a7 Action
      * @param a8 Action
      * @param a9 Action
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
@@ -2653,7 +2653,7 @@ public class Actions {
      * Combines provided actions into a single action stream
      *
      * @param a Actions
-     * @return Single action stream combined of the provided actions
+     * @return Single action stream combined from provided actions
      */
     @CheckResult
     @NonNull
