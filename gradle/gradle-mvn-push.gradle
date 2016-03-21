@@ -83,9 +83,7 @@ afterEvaluate { project ->
     }
 
     task androidJavadocs(type: Javadoc) {
-        if (!project.plugins.hasPlugin('kotlin-android')) {
-            source = android.sourceSets.main.java.srcDirs
-        }
+        source = android.sourceSets.main.java.srcDirs
         classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
         exclude '**/internal/*'
 
