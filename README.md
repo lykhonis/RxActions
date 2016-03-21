@@ -7,7 +7,7 @@ Download
 --------
 
 ```groovy
-compile 'com.vladimirlichonos.rxactions:rxactions:0.1.0'
+compile 'com.vladimirlichonos.rxactions:rxactions:0.1.1'
 ```
 
 License
