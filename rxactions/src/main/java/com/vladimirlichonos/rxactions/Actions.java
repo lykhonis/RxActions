@@ -268,7 +268,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T> Action1<T> combine(@NonNull Action1<T> a1) {
+    public static <T> Action1<? super T> combine(@NonNull Action1<? super T> a1) {
         return a1;
     }
 
@@ -281,7 +281,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T> Action1<T> combine(@NonNull final Action1<T> a1, @NonNull final Action1<T> a2) {
+    public static <T> Action1<? super T> combine(@NonNull final Action1<? super T> a1, @NonNull final Action1<? super T> a2) {
         return new Action1<T>() {
             @Override
             public void call(T t) {
@@ -301,7 +301,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T> Action1<T> combine(@NonNull final Action1<T> a1, @NonNull final Action1<T> a2, @NonNull final Action1<T> a3) {
+    public static <T> Action1<? super T> combine(@NonNull final Action1<? super T> a1, @NonNull final Action1<? super T> a2, @NonNull final Action1<? super T> a3) {
         return new Action1<T>() {
             @Override
             public void call(T t) {
@@ -323,7 +323,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T> Action1<T> combine(@NonNull final Action1<T> a1, @NonNull final Action1<T> a2, @NonNull final Action1<T> a3, @NonNull final Action1<T> a4) {
+    public static <T> Action1<? super T> combine(@NonNull final Action1<? super T> a1, @NonNull final Action1<? super T> a2, @NonNull final Action1<? super T> a3, @NonNull final Action1<? super T> a4) {
         return new Action1<T>() {
             @Override
             public void call(T t) {
@@ -347,7 +347,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T> Action1<T> combine(@NonNull final Action1<T> a1, @NonNull final Action1<T> a2, @NonNull final Action1<T> a3, @NonNull final Action1<T> a4, @NonNull final Action1<T> a5) {
+    public static <T> Action1<? super T> combine(@NonNull final Action1<? super T> a1, @NonNull final Action1<? super T> a2, @NonNull final Action1<? super T> a3, @NonNull final Action1<? super T> a4, @NonNull final Action1<? super T> a5) {
         return new Action1<T>() {
             @Override
             public void call(T t) {
@@ -373,7 +373,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T> Action1<T> combine(@NonNull final Action1<T> a1, @NonNull final Action1<T> a2, @NonNull final Action1<T> a3, @NonNull final Action1<T> a4, @NonNull final Action1<T> a5, @NonNull final Action1<T> a6) {
+    public static <T> Action1<? super T> combine(@NonNull final Action1<? super T> a1, @NonNull final Action1<? super T> a2, @NonNull final Action1<? super T> a3, @NonNull final Action1<? super T> a4, @NonNull final Action1<? super T> a5, @NonNull final Action1<? super T> a6) {
         return new Action1<T>() {
             @Override
             public void call(T t) {
@@ -401,7 +401,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T> Action1<T> combine(@NonNull final Action1<T> a1, @NonNull final Action1<T> a2, @NonNull final Action1<T> a3, @NonNull final Action1<T> a4, @NonNull final Action1<T> a5, @NonNull final Action1<T> a6, @NonNull final Action1<T> a7) {
+    public static <T> Action1<? super T> combine(@NonNull final Action1<? super T> a1, @NonNull final Action1<? super T> a2, @NonNull final Action1<? super T> a3, @NonNull final Action1<? super T> a4, @NonNull final Action1<? super T> a5, @NonNull final Action1<? super T> a6, @NonNull final Action1<? super T> a7) {
         return new Action1<T>() {
             @Override
             public void call(T t) {
@@ -431,7 +431,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T> Action1<T> combine(@NonNull final Action1<T> a1, @NonNull final Action1<T> a2, @NonNull final Action1<T> a3, @NonNull final Action1<T> a4, @NonNull final Action1<T> a5, @NonNull final Action1<T> a6, @NonNull final Action1<T> a7, @NonNull final Action1<T> a8) {
+    public static <T> Action1<? super T> combine(@NonNull final Action1<? super T> a1, @NonNull final Action1<? super T> a2, @NonNull final Action1<? super T> a3, @NonNull final Action1<? super T> a4, @NonNull final Action1<? super T> a5, @NonNull final Action1<? super T> a6, @NonNull final Action1<? super T> a7, @NonNull final Action1<? super T> a8) {
         return new Action1<T>() {
             @Override
             public void call(T t) {
@@ -463,7 +463,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T> Action1<T> combine(@NonNull final Action1<T> a1, @NonNull final Action1<T> a2, @NonNull final Action1<T> a3, @NonNull final Action1<T> a4, @NonNull final Action1<T> a5, @NonNull final Action1<T> a6, @NonNull final Action1<T> a7, @NonNull final Action1<T> a8, @NonNull final Action1<T> a9) {
+    public static <T> Action1<? super T> combine(@NonNull final Action1<? super T> a1, @NonNull final Action1<? super T> a2, @NonNull final Action1<? super T> a3, @NonNull final Action1<? super T> a4, @NonNull final Action1<? super T> a5, @NonNull final Action1<? super T> a6, @NonNull final Action1<? super T> a7, @NonNull final Action1<? super T> a8, @NonNull final Action1<? super T> a9) {
         return new Action1<T>() {
             @Override
             public void call(T t) {
@@ -489,7 +489,7 @@ public class Actions {
     @SafeVarargs
     @CheckResult
     @NonNull
-    public static <T> Action1<T> combine(@NonNull final Action1<T>... a) {
+    public static <T> Action1<? super T> combine(@NonNull final Action1<? super T>... a) {
         return new Action1<T>() {
             @Override
             public void call(T t) {
@@ -509,7 +509,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2> Action2<T1, T2> combine(@NonNull Action2<T1, T2> a1) {
+    public static <T1, T2> Action2<? super T1, ? super T2> combine(@NonNull Action2<? super T1, ? super T2> a1) {
         return a1;
     }
 
@@ -522,7 +522,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2> Action2<T1, T2> combine(@NonNull final Action2<T1, T2> a1, @NonNull final Action2<T1, T2> a2) {
+    public static <T1, T2> Action2<? super T1, ? super T2> combine(@NonNull final Action2<? super T1, ? super T2> a1, @NonNull final Action2<? super T1, ? super T2> a2) {
         return new Action2<T1, T2>() {
             @Override
             public void call(T1 t1, T2 t2) {
@@ -542,7 +542,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2> Action2<T1, T2> combine(@NonNull final Action2<T1, T2> a1, @NonNull final Action2<T1, T2> a2, @NonNull final Action2<T1, T2> a3) {
+    public static <T1, T2> Action2<? super T1, ? super T2> combine(@NonNull final Action2<? super T1, ? super T2> a1, @NonNull final Action2<? super T1, ? super T2> a2, @NonNull final Action2<? super T1, ? super T2> a3) {
         return new Action2<T1, T2>() {
             @Override
             public void call(T1 t1, T2 t2) {
@@ -564,7 +564,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2> Action2<T1, T2> combine(@NonNull final Action2<T1, T2> a1, @NonNull final Action2<T1, T2> a2, @NonNull final Action2<T1, T2> a3, @NonNull final Action2<T1, T2> a4) {
+    public static <T1, T2> Action2<? super T1, ? super T2> combine(@NonNull final Action2<? super T1, ? super T2> a1, @NonNull final Action2<? super T1, ? super T2> a2, @NonNull final Action2<? super T1, ? super T2> a3, @NonNull final Action2<? super T1, ? super T2> a4) {
         return new Action2<T1, T2>() {
             @Override
             public void call(T1 t1, T2 t2) {
@@ -588,7 +588,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2> Action2<T1, T2> combine(@NonNull final Action2<T1, T2> a1, @NonNull final Action2<T1, T2> a2, @NonNull final Action2<T1, T2> a3, @NonNull final Action2<T1, T2> a4, @NonNull final Action2<T1, T2> a5) {
+    public static <T1, T2> Action2<? super T1, ? super T2> combine(@NonNull final Action2<? super T1, ? super T2> a1, @NonNull final Action2<? super T1, ? super T2> a2, @NonNull final Action2<? super T1, ? super T2> a3, @NonNull final Action2<? super T1, ? super T2> a4, @NonNull final Action2<? super T1, ? super T2> a5) {
         return new Action2<T1, T2>() {
             @Override
             public void call(T1 t1, T2 t2) {
@@ -614,7 +614,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2> Action2<T1, T2> combine(@NonNull final Action2<T1, T2> a1, @NonNull final Action2<T1, T2> a2, @NonNull final Action2<T1, T2> a3, @NonNull final Action2<T1, T2> a4, @NonNull final Action2<T1, T2> a5, @NonNull final Action2<T1, T2> a6) {
+    public static <T1, T2> Action2<? super T1, ? super T2> combine(@NonNull final Action2<? super T1, ? super T2> a1, @NonNull final Action2<? super T1, ? super T2> a2, @NonNull final Action2<? super T1, ? super T2> a3, @NonNull final Action2<? super T1, ? super T2> a4, @NonNull final Action2<? super T1, ? super T2> a5, @NonNull final Action2<? super T1, ? super T2> a6) {
         return new Action2<T1, T2>() {
             @Override
             public void call(T1 t1, T2 t2) {
@@ -642,7 +642,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2> Action2<T1, T2> combine(@NonNull final Action2<T1, T2> a1, @NonNull final Action2<T1, T2> a2, @NonNull final Action2<T1, T2> a3, @NonNull final Action2<T1, T2> a4, @NonNull final Action2<T1, T2> a5, @NonNull final Action2<T1, T2> a6, @NonNull final Action2<T1, T2> a7) {
+    public static <T1, T2> Action2<? super T1, ? super T2> combine(@NonNull final Action2<? super T1, ? super T2> a1, @NonNull final Action2<? super T1, ? super T2> a2, @NonNull final Action2<? super T1, ? super T2> a3, @NonNull final Action2<? super T1, ? super T2> a4, @NonNull final Action2<? super T1, ? super T2> a5, @NonNull final Action2<? super T1, ? super T2> a6, @NonNull final Action2<? super T1, ? super T2> a7) {
         return new Action2<T1, T2>() {
             @Override
             public void call(T1 t1, T2 t2) {
@@ -672,7 +672,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2> Action2<T1, T2> combine(@NonNull final Action2<T1, T2> a1, @NonNull final Action2<T1, T2> a2, @NonNull final Action2<T1, T2> a3, @NonNull final Action2<T1, T2> a4, @NonNull final Action2<T1, T2> a5, @NonNull final Action2<T1, T2> a6, @NonNull final Action2<T1, T2> a7, @NonNull final Action2<T1, T2> a8) {
+    public static <T1, T2> Action2<? super T1, ? super T2> combine(@NonNull final Action2<? super T1, ? super T2> a1, @NonNull final Action2<? super T1, ? super T2> a2, @NonNull final Action2<? super T1, ? super T2> a3, @NonNull final Action2<? super T1, ? super T2> a4, @NonNull final Action2<? super T1, ? super T2> a5, @NonNull final Action2<? super T1, ? super T2> a6, @NonNull final Action2<? super T1, ? super T2> a7, @NonNull final Action2<? super T1, ? super T2> a8) {
         return new Action2<T1, T2>() {
             @Override
             public void call(T1 t1, T2 t2) {
@@ -704,7 +704,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2> Action2<T1, T2> combine(@NonNull final Action2<T1, T2> a1, @NonNull final Action2<T1, T2> a2, @NonNull final Action2<T1, T2> a3, @NonNull final Action2<T1, T2> a4, @NonNull final Action2<T1, T2> a5, @NonNull final Action2<T1, T2> a6, @NonNull final Action2<T1, T2> a7, @NonNull final Action2<T1, T2> a8, @NonNull final Action2<T1, T2> a9) {
+    public static <T1, T2> Action2<? super T1, ? super T2> combine(@NonNull final Action2<? super T1, ? super T2> a1, @NonNull final Action2<? super T1, ? super T2> a2, @NonNull final Action2<? super T1, ? super T2> a3, @NonNull final Action2<? super T1, ? super T2> a4, @NonNull final Action2<? super T1, ? super T2> a5, @NonNull final Action2<? super T1, ? super T2> a6, @NonNull final Action2<? super T1, ? super T2> a7, @NonNull final Action2<? super T1, ? super T2> a8, @NonNull final Action2<? super T1, ? super T2> a9) {
         return new Action2<T1, T2>() {
             @Override
             public void call(T1 t1, T2 t2) {
@@ -730,7 +730,7 @@ public class Actions {
     @SafeVarargs
     @CheckResult
     @NonNull
-    public static <T1, T2> Action2<T1, T2> combine(@NonNull final Action2<T1, T2>... a) {
+    public static <T1, T2> Action2<? super T1, ? super T2> combine(@NonNull final Action2<? super T1, ? super T2>... a) {
         return new Action2<T1, T2>() {
             @Override
             public void call(T1 t1, T2 t2) {
@@ -750,7 +750,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3> Action3<T1, T2, T3> combine(@NonNull Action3<T1, T2, T3> a1) {
+    public static <T1, T2, T3> Action3<? super T1, ? super T2, ? super T3> combine(@NonNull Action3<? super T1, ? super T2, ? super T3> a1) {
         return a1;
     }
 
@@ -763,7 +763,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3> Action3<T1, T2, T3> combine(@NonNull final Action3<T1, T2, T3> a1, @NonNull final Action3<T1, T2, T3> a2) {
+    public static <T1, T2, T3> Action3<? super T1, ? super T2, ? super T3> combine(@NonNull final Action3<? super T1, ? super T2, ? super T3> a1, @NonNull final Action3<? super T1, ? super T2, ? super T3> a2) {
         return new Action3<T1, T2, T3>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3) {
@@ -783,7 +783,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3> Action3<T1, T2, T3> combine(@NonNull final Action3<T1, T2, T3> a1, @NonNull final Action3<T1, T2, T3> a2, @NonNull final Action3<T1, T2, T3> a3) {
+    public static <T1, T2, T3> Action3<? super T1, ? super T2, ? super T3> combine(@NonNull final Action3<? super T1, ? super T2, ? super T3> a1, @NonNull final Action3<? super T1, ? super T2, ? super T3> a2, @NonNull final Action3<? super T1, ? super T2, ? super T3> a3) {
         return new Action3<T1, T2, T3>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3) {
@@ -805,7 +805,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3> Action3<T1, T2, T3> combine(@NonNull final Action3<T1, T2, T3> a1, @NonNull final Action3<T1, T2, T3> a2, @NonNull final Action3<T1, T2, T3> a3, @NonNull final Action3<T1, T2, T3> a4) {
+    public static <T1, T2, T3> Action3<? super T1, ? super T2, ? super T3> combine(@NonNull final Action3<? super T1, ? super T2, ? super T3> a1, @NonNull final Action3<? super T1, ? super T2, ? super T3> a2, @NonNull final Action3<? super T1, ? super T2, ? super T3> a3, @NonNull final Action3<? super T1, ? super T2, ? super T3> a4) {
         return new Action3<T1, T2, T3>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3) {
@@ -829,7 +829,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3> Action3<T1, T2, T3> combine(@NonNull final Action3<T1, T2, T3> a1, @NonNull final Action3<T1, T2, T3> a2, @NonNull final Action3<T1, T2, T3> a3, @NonNull final Action3<T1, T2, T3> a4, @NonNull final Action3<T1, T2, T3> a5) {
+    public static <T1, T2, T3> Action3<? super T1, ? super T2, ? super T3> combine(@NonNull final Action3<? super T1, ? super T2, ? super T3> a1, @NonNull final Action3<? super T1, ? super T2, ? super T3> a2, @NonNull final Action3<? super T1, ? super T2, ? super T3> a3, @NonNull final Action3<? super T1, ? super T2, ? super T3> a4, @NonNull final Action3<? super T1, ? super T2, ? super T3> a5) {
         return new Action3<T1, T2, T3>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3) {
@@ -855,7 +855,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3> Action3<T1, T2, T3> combine(@NonNull final Action3<T1, T2, T3> a1, @NonNull final Action3<T1, T2, T3> a2, @NonNull final Action3<T1, T2, T3> a3, @NonNull final Action3<T1, T2, T3> a4, @NonNull final Action3<T1, T2, T3> a5, @NonNull final Action3<T1, T2, T3> a6) {
+    public static <T1, T2, T3> Action3<? super T1, ? super T2, ? super T3> combine(@NonNull final Action3<? super T1, ? super T2, ? super T3> a1, @NonNull final Action3<? super T1, ? super T2, ? super T3> a2, @NonNull final Action3<? super T1, ? super T2, ? super T3> a3, @NonNull final Action3<? super T1, ? super T2, ? super T3> a4, @NonNull final Action3<? super T1, ? super T2, ? super T3> a5, @NonNull final Action3<? super T1, ? super T2, ? super T3> a6) {
         return new Action3<T1, T2, T3>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3) {
@@ -883,7 +883,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3> Action3<T1, T2, T3> combine(@NonNull final Action3<T1, T2, T3> a1, @NonNull final Action3<T1, T2, T3> a2, @NonNull final Action3<T1, T2, T3> a3, @NonNull final Action3<T1, T2, T3> a4, @NonNull final Action3<T1, T2, T3> a5, @NonNull final Action3<T1, T2, T3> a6, @NonNull final Action3<T1, T2, T3> a7) {
+    public static <T1, T2, T3> Action3<? super T1, ? super T2, ? super T3> combine(@NonNull final Action3<? super T1, ? super T2, ? super T3> a1, @NonNull final Action3<? super T1, ? super T2, ? super T3> a2, @NonNull final Action3<? super T1, ? super T2, ? super T3> a3, @NonNull final Action3<? super T1, ? super T2, ? super T3> a4, @NonNull final Action3<? super T1, ? super T2, ? super T3> a5, @NonNull final Action3<? super T1, ? super T2, ? super T3> a6, @NonNull final Action3<? super T1, ? super T2, ? super T3> a7) {
         return new Action3<T1, T2, T3>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3) {
@@ -913,7 +913,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3> Action3<T1, T2, T3> combine(@NonNull final Action3<T1, T2, T3> a1, @NonNull final Action3<T1, T2, T3> a2, @NonNull final Action3<T1, T2, T3> a3, @NonNull final Action3<T1, T2, T3> a4, @NonNull final Action3<T1, T2, T3> a5, @NonNull final Action3<T1, T2, T3> a6, @NonNull final Action3<T1, T2, T3> a7, @NonNull final Action3<T1, T2, T3> a8) {
+    public static <T1, T2, T3> Action3<? super T1, ? super T2, ? super T3> combine(@NonNull final Action3<? super T1, ? super T2, ? super T3> a1, @NonNull final Action3<? super T1, ? super T2, ? super T3> a2, @NonNull final Action3<? super T1, ? super T2, ? super T3> a3, @NonNull final Action3<? super T1, ? super T2, ? super T3> a4, @NonNull final Action3<? super T1, ? super T2, ? super T3> a5, @NonNull final Action3<? super T1, ? super T2, ? super T3> a6, @NonNull final Action3<? super T1, ? super T2, ? super T3> a7, @NonNull final Action3<? super T1, ? super T2, ? super T3> a8) {
         return new Action3<T1, T2, T3>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3) {
@@ -945,7 +945,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3> Action3<T1, T2, T3> combine(@NonNull final Action3<T1, T2, T3> a1, @NonNull final Action3<T1, T2, T3> a2, @NonNull final Action3<T1, T2, T3> a3, @NonNull final Action3<T1, T2, T3> a4, @NonNull final Action3<T1, T2, T3> a5, @NonNull final Action3<T1, T2, T3> a6, @NonNull final Action3<T1, T2, T3> a7, @NonNull final Action3<T1, T2, T3> a8, @NonNull final Action3<T1, T2, T3> a9) {
+    public static <T1, T2, T3> Action3<? super T1, ? super T2, ? super T3> combine(@NonNull final Action3<? super T1, ? super T2, ? super T3> a1, @NonNull final Action3<? super T1, ? super T2, ? super T3> a2, @NonNull final Action3<? super T1, ? super T2, ? super T3> a3, @NonNull final Action3<? super T1, ? super T2, ? super T3> a4, @NonNull final Action3<? super T1, ? super T2, ? super T3> a5, @NonNull final Action3<? super T1, ? super T2, ? super T3> a6, @NonNull final Action3<? super T1, ? super T2, ? super T3> a7, @NonNull final Action3<? super T1, ? super T2, ? super T3> a8, @NonNull final Action3<? super T1, ? super T2, ? super T3> a9) {
         return new Action3<T1, T2, T3>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3) {
@@ -971,7 +971,7 @@ public class Actions {
     @SafeVarargs
     @CheckResult
     @NonNull
-    public static <T1, T2, T3> Action3<T1, T2, T3> combine(@NonNull final Action3<T1, T2, T3>... a) {
+    public static <T1, T2, T3> Action3<? super T1, ? super T2, ? super T3> combine(@NonNull final Action3<? super T1, ? super T2, ? super T3>... a) {
         return new Action3<T1, T2, T3>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3) {
@@ -991,7 +991,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4> Action4<T1, T2, T3, T4> combine(@NonNull Action4<T1, T2, T3, T4> a1) {
+    public static <T1, T2, T3, T4> Action4<? super T1, ? super T2, ? super T3, ? super T4> combine(@NonNull Action4<? super T1, ? super T2, ? super T3, ? super T4> a1) {
         return a1;
     }
 
@@ -1004,7 +1004,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4> Action4<T1, T2, T3, T4> combine(@NonNull final Action4<T1, T2, T3, T4> a1, @NonNull final Action4<T1, T2, T3, T4> a2) {
+    public static <T1, T2, T3, T4> Action4<? super T1, ? super T2, ? super T3, ? super T4> combine(@NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a1, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a2) {
         return new Action4<T1, T2, T3, T4>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4) {
@@ -1024,7 +1024,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4> Action4<T1, T2, T3, T4> combine(@NonNull final Action4<T1, T2, T3, T4> a1, @NonNull final Action4<T1, T2, T3, T4> a2, @NonNull final Action4<T1, T2, T3, T4> a3) {
+    public static <T1, T2, T3, T4> Action4<? super T1, ? super T2, ? super T3, ? super T4> combine(@NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a1, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a2, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a3) {
         return new Action4<T1, T2, T3, T4>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4) {
@@ -1046,7 +1046,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4> Action4<T1, T2, T3, T4> combine(@NonNull final Action4<T1, T2, T3, T4> a1, @NonNull final Action4<T1, T2, T3, T4> a2, @NonNull final Action4<T1, T2, T3, T4> a3, @NonNull final Action4<T1, T2, T3, T4> a4) {
+    public static <T1, T2, T3, T4> Action4<? super T1, ? super T2, ? super T3, ? super T4> combine(@NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a1, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a2, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a3, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a4) {
         return new Action4<T1, T2, T3, T4>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4) {
@@ -1070,7 +1070,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4> Action4<T1, T2, T3, T4> combine(@NonNull final Action4<T1, T2, T3, T4> a1, @NonNull final Action4<T1, T2, T3, T4> a2, @NonNull final Action4<T1, T2, T3, T4> a3, @NonNull final Action4<T1, T2, T3, T4> a4, @NonNull final Action4<T1, T2, T3, T4> a5) {
+    public static <T1, T2, T3, T4> Action4<? super T1, ? super T2, ? super T3, ? super T4> combine(@NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a1, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a2, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a3, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a4, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a5) {
         return new Action4<T1, T2, T3, T4>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4) {
@@ -1096,7 +1096,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4> Action4<T1, T2, T3, T4> combine(@NonNull final Action4<T1, T2, T3, T4> a1, @NonNull final Action4<T1, T2, T3, T4> a2, @NonNull final Action4<T1, T2, T3, T4> a3, @NonNull final Action4<T1, T2, T3, T4> a4, @NonNull final Action4<T1, T2, T3, T4> a5, @NonNull final Action4<T1, T2, T3, T4> a6) {
+    public static <T1, T2, T3, T4> Action4<? super T1, ? super T2, ? super T3, ? super T4> combine(@NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a1, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a2, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a3, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a4, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a5, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a6) {
         return new Action4<T1, T2, T3, T4>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4) {
@@ -1124,7 +1124,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4> Action4<T1, T2, T3, T4> combine(@NonNull final Action4<T1, T2, T3, T4> a1, @NonNull final Action4<T1, T2, T3, T4> a2, @NonNull final Action4<T1, T2, T3, T4> a3, @NonNull final Action4<T1, T2, T3, T4> a4, @NonNull final Action4<T1, T2, T3, T4> a5, @NonNull final Action4<T1, T2, T3, T4> a6, @NonNull final Action4<T1, T2, T3, T4> a7) {
+    public static <T1, T2, T3, T4> Action4<? super T1, ? super T2, ? super T3, ? super T4> combine(@NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a1, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a2, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a3, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a4, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a5, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a6, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a7) {
         return new Action4<T1, T2, T3, T4>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4) {
@@ -1154,7 +1154,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4> Action4<T1, T2, T3, T4> combine(@NonNull final Action4<T1, T2, T3, T4> a1, @NonNull final Action4<T1, T2, T3, T4> a2, @NonNull final Action4<T1, T2, T3, T4> a3, @NonNull final Action4<T1, T2, T3, T4> a4, @NonNull final Action4<T1, T2, T3, T4> a5, @NonNull final Action4<T1, T2, T3, T4> a6, @NonNull final Action4<T1, T2, T3, T4> a7, @NonNull final Action4<T1, T2, T3, T4> a8) {
+    public static <T1, T2, T3, T4> Action4<? super T1, ? super T2, ? super T3, ? super T4> combine(@NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a1, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a2, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a3, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a4, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a5, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a6, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a7, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a8) {
         return new Action4<T1, T2, T3, T4>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4) {
@@ -1186,7 +1186,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4> Action4<T1, T2, T3, T4> combine(@NonNull final Action4<T1, T2, T3, T4> a1, @NonNull final Action4<T1, T2, T3, T4> a2, @NonNull final Action4<T1, T2, T3, T4> a3, @NonNull final Action4<T1, T2, T3, T4> a4, @NonNull final Action4<T1, T2, T3, T4> a5, @NonNull final Action4<T1, T2, T3, T4> a6, @NonNull final Action4<T1, T2, T3, T4> a7, @NonNull final Action4<T1, T2, T3, T4> a8, @NonNull final Action4<T1, T2, T3, T4> a9) {
+    public static <T1, T2, T3, T4> Action4<? super T1, ? super T2, ? super T3, ? super T4> combine(@NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a1, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a2, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a3, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a4, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a5, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a6, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a7, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a8, @NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4> a9) {
         return new Action4<T1, T2, T3, T4>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4) {
@@ -1212,7 +1212,7 @@ public class Actions {
     @SafeVarargs
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4> Action4<T1, T2, T3, T4> combine(@NonNull final Action4<T1, T2, T3, T4>... a) {
+    public static <T1, T2, T3, T4> Action4<? super T1, ? super T2, ? super T3, ? super T4> combine(@NonNull final Action4<? super T1, ? super T2, ? super T3, ? super T4>... a) {
         return new Action4<T1, T2, T3, T4>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4) {
@@ -1232,7 +1232,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5> Action5<T1, T2, T3, T4, T5> combine(@NonNull Action5<T1, T2, T3, T4, T5> a1) {
+    public static <T1, T2, T3, T4, T5> Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> combine(@NonNull Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a1) {
         return a1;
     }
 
@@ -1245,7 +1245,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5> Action5<T1, T2, T3, T4, T5> combine(@NonNull final Action5<T1, T2, T3, T4, T5> a1, @NonNull final Action5<T1, T2, T3, T4, T5> a2) {
+    public static <T1, T2, T3, T4, T5> Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> combine(@NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a1, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a2) {
         return new Action5<T1, T2, T3, T4, T5>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5) {
@@ -1265,7 +1265,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5> Action5<T1, T2, T3, T4, T5> combine(@NonNull final Action5<T1, T2, T3, T4, T5> a1, @NonNull final Action5<T1, T2, T3, T4, T5> a2, @NonNull final Action5<T1, T2, T3, T4, T5> a3) {
+    public static <T1, T2, T3, T4, T5> Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> combine(@NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a1, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a2, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a3) {
         return new Action5<T1, T2, T3, T4, T5>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5) {
@@ -1287,7 +1287,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5> Action5<T1, T2, T3, T4, T5> combine(@NonNull final Action5<T1, T2, T3, T4, T5> a1, @NonNull final Action5<T1, T2, T3, T4, T5> a2, @NonNull final Action5<T1, T2, T3, T4, T5> a3, @NonNull final Action5<T1, T2, T3, T4, T5> a4) {
+    public static <T1, T2, T3, T4, T5> Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> combine(@NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a1, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a2, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a3, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a4) {
         return new Action5<T1, T2, T3, T4, T5>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5) {
@@ -1311,7 +1311,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5> Action5<T1, T2, T3, T4, T5> combine(@NonNull final Action5<T1, T2, T3, T4, T5> a1, @NonNull final Action5<T1, T2, T3, T4, T5> a2, @NonNull final Action5<T1, T2, T3, T4, T5> a3, @NonNull final Action5<T1, T2, T3, T4, T5> a4, @NonNull final Action5<T1, T2, T3, T4, T5> a5) {
+    public static <T1, T2, T3, T4, T5> Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> combine(@NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a1, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a2, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a3, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a4, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a5) {
         return new Action5<T1, T2, T3, T4, T5>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5) {
@@ -1337,7 +1337,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5> Action5<T1, T2, T3, T4, T5> combine(@NonNull final Action5<T1, T2, T3, T4, T5> a1, @NonNull final Action5<T1, T2, T3, T4, T5> a2, @NonNull final Action5<T1, T2, T3, T4, T5> a3, @NonNull final Action5<T1, T2, T3, T4, T5> a4, @NonNull final Action5<T1, T2, T3, T4, T5> a5, @NonNull final Action5<T1, T2, T3, T4, T5> a6) {
+    public static <T1, T2, T3, T4, T5> Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> combine(@NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a1, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a2, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a3, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a4, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a5, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a6) {
         return new Action5<T1, T2, T3, T4, T5>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5) {
@@ -1365,7 +1365,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5> Action5<T1, T2, T3, T4, T5> combine(@NonNull final Action5<T1, T2, T3, T4, T5> a1, @NonNull final Action5<T1, T2, T3, T4, T5> a2, @NonNull final Action5<T1, T2, T3, T4, T5> a3, @NonNull final Action5<T1, T2, T3, T4, T5> a4, @NonNull final Action5<T1, T2, T3, T4, T5> a5, @NonNull final Action5<T1, T2, T3, T4, T5> a6, @NonNull final Action5<T1, T2, T3, T4, T5> a7) {
+    public static <T1, T2, T3, T4, T5> Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> combine(@NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a1, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a2, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a3, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a4, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a5, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a6, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a7) {
         return new Action5<T1, T2, T3, T4, T5>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5) {
@@ -1395,7 +1395,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5> Action5<T1, T2, T3, T4, T5> combine(@NonNull final Action5<T1, T2, T3, T4, T5> a1, @NonNull final Action5<T1, T2, T3, T4, T5> a2, @NonNull final Action5<T1, T2, T3, T4, T5> a3, @NonNull final Action5<T1, T2, T3, T4, T5> a4, @NonNull final Action5<T1, T2, T3, T4, T5> a5, @NonNull final Action5<T1, T2, T3, T4, T5> a6, @NonNull final Action5<T1, T2, T3, T4, T5> a7, @NonNull final Action5<T1, T2, T3, T4, T5> a8) {
+    public static <T1, T2, T3, T4, T5> Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> combine(@NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a1, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a2, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a3, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a4, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a5, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a6, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a7, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a8) {
         return new Action5<T1, T2, T3, T4, T5>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5) {
@@ -1427,7 +1427,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5> Action5<T1, T2, T3, T4, T5> combine(@NonNull final Action5<T1, T2, T3, T4, T5> a1, @NonNull final Action5<T1, T2, T3, T4, T5> a2, @NonNull final Action5<T1, T2, T3, T4, T5> a3, @NonNull final Action5<T1, T2, T3, T4, T5> a4, @NonNull final Action5<T1, T2, T3, T4, T5> a5, @NonNull final Action5<T1, T2, T3, T4, T5> a6, @NonNull final Action5<T1, T2, T3, T4, T5> a7, @NonNull final Action5<T1, T2, T3, T4, T5> a8, @NonNull final Action5<T1, T2, T3, T4, T5> a9) {
+    public static <T1, T2, T3, T4, T5> Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> combine(@NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a1, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a2, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a3, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a4, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a5, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a6, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a7, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a8, @NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> a9) {
         return new Action5<T1, T2, T3, T4, T5>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5) {
@@ -1453,7 +1453,7 @@ public class Actions {
     @SafeVarargs
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5> Action5<T1, T2, T3, T4, T5> combine(@NonNull final Action5<T1, T2, T3, T4, T5>... a) {
+    public static <T1, T2, T3, T4, T5> Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5> combine(@NonNull final Action5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5>... a) {
         return new Action5<T1, T2, T3, T4, T5>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5) {
@@ -1473,7 +1473,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6> Action6<T1, T2, T3, T4, T5, T6> combine(@NonNull Action6<T1, T2, T3, T4, T5, T6> a1) {
+    public static <T1, T2, T3, T4, T5, T6> Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> combine(@NonNull Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a1) {
         return a1;
     }
 
@@ -1486,7 +1486,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6> Action6<T1, T2, T3, T4, T5, T6> combine(@NonNull final Action6<T1, T2, T3, T4, T5, T6> a1, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a2) {
+    public static <T1, T2, T3, T4, T5, T6> Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> combine(@NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a1, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a2) {
         return new Action6<T1, T2, T3, T4, T5, T6>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6) {
@@ -1506,7 +1506,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6> Action6<T1, T2, T3, T4, T5, T6> combine(@NonNull final Action6<T1, T2, T3, T4, T5, T6> a1, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a2, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a3) {
+    public static <T1, T2, T3, T4, T5, T6> Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> combine(@NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a1, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a2, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a3) {
         return new Action6<T1, T2, T3, T4, T5, T6>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6) {
@@ -1528,7 +1528,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6> Action6<T1, T2, T3, T4, T5, T6> combine(@NonNull final Action6<T1, T2, T3, T4, T5, T6> a1, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a2, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a3, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a4) {
+    public static <T1, T2, T3, T4, T5, T6> Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> combine(@NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a1, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a2, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a3, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a4) {
         return new Action6<T1, T2, T3, T4, T5, T6>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6) {
@@ -1552,7 +1552,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6> Action6<T1, T2, T3, T4, T5, T6> combine(@NonNull final Action6<T1, T2, T3, T4, T5, T6> a1, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a2, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a3, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a4, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a5) {
+    public static <T1, T2, T3, T4, T5, T6> Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> combine(@NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a1, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a2, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a3, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a4, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a5) {
         return new Action6<T1, T2, T3, T4, T5, T6>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6) {
@@ -1578,7 +1578,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6> Action6<T1, T2, T3, T4, T5, T6> combine(@NonNull final Action6<T1, T2, T3, T4, T5, T6> a1, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a2, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a3, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a4, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a5, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a6) {
+    public static <T1, T2, T3, T4, T5, T6> Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> combine(@NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a1, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a2, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a3, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a4, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a5, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a6) {
         return new Action6<T1, T2, T3, T4, T5, T6>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6) {
@@ -1606,7 +1606,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6> Action6<T1, T2, T3, T4, T5, T6> combine(@NonNull final Action6<T1, T2, T3, T4, T5, T6> a1, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a2, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a3, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a4, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a5, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a6, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a7) {
+    public static <T1, T2, T3, T4, T5, T6> Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> combine(@NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a1, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a2, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a3, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a4, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a5, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a6, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a7) {
         return new Action6<T1, T2, T3, T4, T5, T6>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6) {
@@ -1636,7 +1636,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6> Action6<T1, T2, T3, T4, T5, T6> combine(@NonNull final Action6<T1, T2, T3, T4, T5, T6> a1, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a2, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a3, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a4, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a5, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a6, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a7, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a8) {
+    public static <T1, T2, T3, T4, T5, T6> Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> combine(@NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a1, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a2, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a3, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a4, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a5, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a6, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a7, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a8) {
         return new Action6<T1, T2, T3, T4, T5, T6>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6) {
@@ -1668,7 +1668,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6> Action6<T1, T2, T3, T4, T5, T6> combine(@NonNull final Action6<T1, T2, T3, T4, T5, T6> a1, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a2, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a3, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a4, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a5, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a6, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a7, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a8, @NonNull final Action6<T1, T2, T3, T4, T5, T6> a9) {
+    public static <T1, T2, T3, T4, T5, T6> Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> combine(@NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a1, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a2, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a3, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a4, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a5, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a6, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a7, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a8, @NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> a9) {
         return new Action6<T1, T2, T3, T4, T5, T6>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6) {
@@ -1694,7 +1694,7 @@ public class Actions {
     @SafeVarargs
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6> Action6<T1, T2, T3, T4, T5, T6> combine(@NonNull final Action6<T1, T2, T3, T4, T5, T6>... a) {
+    public static <T1, T2, T3, T4, T5, T6> Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6> combine(@NonNull final Action6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6>... a) {
         return new Action6<T1, T2, T3, T4, T5, T6>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6) {
@@ -1714,7 +1714,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6, T7> Action7<T1, T2, T3, T4, T5, T6, T7> combine(@NonNull Action7<T1, T2, T3, T4, T5, T6, T7> a1) {
+    public static <T1, T2, T3, T4, T5, T6, T7> Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> combine(@NonNull Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a1) {
         return a1;
     }
 
@@ -1727,7 +1727,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6, T7> Action7<T1, T2, T3, T4, T5, T6, T7> combine(@NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a1, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a2) {
+    public static <T1, T2, T3, T4, T5, T6, T7> Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> combine(@NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a1, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a2) {
         return new Action7<T1, T2, T3, T4, T5, T6, T7>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7) {
@@ -1747,7 +1747,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6, T7> Action7<T1, T2, T3, T4, T5, T6, T7> combine(@NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a1, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a2, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a3) {
+    public static <T1, T2, T3, T4, T5, T6, T7> Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> combine(@NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a1, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a2, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a3) {
         return new Action7<T1, T2, T3, T4, T5, T6, T7>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7) {
@@ -1769,7 +1769,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6, T7> Action7<T1, T2, T3, T4, T5, T6, T7> combine(@NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a1, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a2, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a3, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a4) {
+    public static <T1, T2, T3, T4, T5, T6, T7> Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> combine(@NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a1, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a2, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a3, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a4) {
         return new Action7<T1, T2, T3, T4, T5, T6, T7>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7) {
@@ -1793,7 +1793,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6, T7> Action7<T1, T2, T3, T4, T5, T6, T7> combine(@NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a1, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a2, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a3, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a4, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a5) {
+    public static <T1, T2, T3, T4, T5, T6, T7> Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> combine(@NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a1, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a2, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a3, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a4, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a5) {
         return new Action7<T1, T2, T3, T4, T5, T6, T7>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7) {
@@ -1819,7 +1819,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6, T7> Action7<T1, T2, T3, T4, T5, T6, T7> combine(@NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a1, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a2, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a3, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a4, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a5, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a6) {
+    public static <T1, T2, T3, T4, T5, T6, T7> Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> combine(@NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a1, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a2, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a3, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a4, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a5, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a6) {
         return new Action7<T1, T2, T3, T4, T5, T6, T7>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7) {
@@ -1847,7 +1847,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6, T7> Action7<T1, T2, T3, T4, T5, T6, T7> combine(@NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a1, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a2, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a3, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a4, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a5, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a6, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a7) {
+    public static <T1, T2, T3, T4, T5, T6, T7> Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> combine(@NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a1, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a2, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a3, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a4, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a5, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a6, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a7) {
         return new Action7<T1, T2, T3, T4, T5, T6, T7>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7) {
@@ -1877,7 +1877,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6, T7> Action7<T1, T2, T3, T4, T5, T6, T7> combine(@NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a1, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a2, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a3, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a4, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a5, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a6, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a7, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a8) {
+    public static <T1, T2, T3, T4, T5, T6, T7> Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> combine(@NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a1, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a2, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a3, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a4, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a5, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a6, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a7, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a8) {
         return new Action7<T1, T2, T3, T4, T5, T6, T7>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7) {
@@ -1909,7 +1909,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6, T7> Action7<T1, T2, T3, T4, T5, T6, T7> combine(@NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a1, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a2, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a3, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a4, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a5, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a6, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a7, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a8, @NonNull final Action7<T1, T2, T3, T4, T5, T6, T7> a9) {
+    public static <T1, T2, T3, T4, T5, T6, T7> Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> combine(@NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a1, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a2, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a3, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a4, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a5, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a6, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a7, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a8, @NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> a9) {
         return new Action7<T1, T2, T3, T4, T5, T6, T7>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7) {
@@ -1935,7 +1935,7 @@ public class Actions {
     @SafeVarargs
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6, T7> Action7<T1, T2, T3, T4, T5, T6, T7> combine(@NonNull final Action7<T1, T2, T3, T4, T5, T6, T7>... a) {
+    public static <T1, T2, T3, T4, T5, T6, T7> Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7> combine(@NonNull final Action7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7>... a) {
         return new Action7<T1, T2, T3, T4, T5, T6, T7>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7) {
@@ -1955,7 +1955,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6, T7, T8> Action8<T1, T2, T3, T4, T5, T6, T7, T8> combine(@NonNull Action8<T1, T2, T3, T4, T5, T6, T7, T8> a1) {
+    public static <T1, T2, T3, T4, T5, T6, T7, T8> Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> combine(@NonNull Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a1) {
         return a1;
     }
 
@@ -1968,7 +1968,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6, T7, T8> Action8<T1, T2, T3, T4, T5, T6, T7, T8> combine(@NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a1, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a2) {
+    public static <T1, T2, T3, T4, T5, T6, T7, T8> Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> combine(@NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a1, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a2) {
         return new Action8<T1, T2, T3, T4, T5, T6, T7, T8>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8) {
@@ -1988,7 +1988,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6, T7, T8> Action8<T1, T2, T3, T4, T5, T6, T7, T8> combine(@NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a1, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a2, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a3) {
+    public static <T1, T2, T3, T4, T5, T6, T7, T8> Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> combine(@NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a1, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a2, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a3) {
         return new Action8<T1, T2, T3, T4, T5, T6, T7, T8>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8) {
@@ -2010,7 +2010,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6, T7, T8> Action8<T1, T2, T3, T4, T5, T6, T7, T8> combine(@NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a1, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a2, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a3, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a4) {
+    public static <T1, T2, T3, T4, T5, T6, T7, T8> Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> combine(@NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a1, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a2, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a3, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a4) {
         return new Action8<T1, T2, T3, T4, T5, T6, T7, T8>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8) {
@@ -2034,7 +2034,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6, T7, T8> Action8<T1, T2, T3, T4, T5, T6, T7, T8> combine(@NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a1, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a2, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a3, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a4, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a5) {
+    public static <T1, T2, T3, T4, T5, T6, T7, T8> Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> combine(@NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a1, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a2, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a3, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a4, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a5) {
         return new Action8<T1, T2, T3, T4, T5, T6, T7, T8>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8) {
@@ -2060,7 +2060,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6, T7, T8> Action8<T1, T2, T3, T4, T5, T6, T7, T8> combine(@NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a1, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a2, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a3, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a4, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a5, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a6) {
+    public static <T1, T2, T3, T4, T5, T6, T7, T8> Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> combine(@NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a1, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a2, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a3, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a4, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a5, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a6) {
         return new Action8<T1, T2, T3, T4, T5, T6, T7, T8>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8) {
@@ -2088,7 +2088,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6, T7, T8> Action8<T1, T2, T3, T4, T5, T6, T7, T8> combine(@NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a1, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a2, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a3, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a4, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a5, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a6, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a7) {
+    public static <T1, T2, T3, T4, T5, T6, T7, T8> Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> combine(@NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a1, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a2, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a3, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a4, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a5, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a6, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a7) {
         return new Action8<T1, T2, T3, T4, T5, T6, T7, T8>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8) {
@@ -2118,7 +2118,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6, T7, T8> Action8<T1, T2, T3, T4, T5, T6, T7, T8> combine(@NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a1, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a2, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a3, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a4, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a5, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a6, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a7, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a8) {
+    public static <T1, T2, T3, T4, T5, T6, T7, T8> Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> combine(@NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a1, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a2, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a3, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a4, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a5, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a6, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a7, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a8) {
         return new Action8<T1, T2, T3, T4, T5, T6, T7, T8>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8) {
@@ -2150,7 +2150,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6, T7, T8> Action8<T1, T2, T3, T4, T5, T6, T7, T8> combine(@NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a1, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a2, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a3, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a4, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a5, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a6, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a7, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a8, @NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8> a9) {
+    public static <T1, T2, T3, T4, T5, T6, T7, T8> Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> combine(@NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a1, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a2, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a3, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a4, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a5, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a6, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a7, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a8, @NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> a9) {
         return new Action8<T1, T2, T3, T4, T5, T6, T7, T8>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8) {
@@ -2176,7 +2176,7 @@ public class Actions {
     @SafeVarargs
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6, T7, T8> Action8<T1, T2, T3, T4, T5, T6, T7, T8> combine(@NonNull final Action8<T1, T2, T3, T4, T5, T6, T7, T8>... a) {
+    public static <T1, T2, T3, T4, T5, T6, T7, T8> Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8> combine(@NonNull final Action8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8>... a) {
         return new Action8<T1, T2, T3, T4, T5, T6, T7, T8>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8) {
@@ -2196,7 +2196,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9> Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> combine(@NonNull Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a1) {
+    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9> Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> combine(@NonNull Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a1) {
         return a1;
     }
 
@@ -2209,7 +2209,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9> Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> combine(@NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a1, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a2) {
+    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9> Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> combine(@NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a1, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a2) {
         return new Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8, T9 t9) {
@@ -2229,7 +2229,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9> Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> combine(@NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a1, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a2, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a3) {
+    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9> Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> combine(@NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a1, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a2, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a3) {
         return new Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8, T9 t9) {
@@ -2251,7 +2251,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9> Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> combine(@NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a1, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a2, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a3, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a4) {
+    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9> Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> combine(@NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a1, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a2, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a3, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a4) {
         return new Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8, T9 t9) {
@@ -2275,7 +2275,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9> Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> combine(@NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a1, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a2, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a3, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a4, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a5) {
+    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9> Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> combine(@NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a1, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a2, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a3, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a4, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a5) {
         return new Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8, T9 t9) {
@@ -2301,7 +2301,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9> Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> combine(@NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a1, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a2, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a3, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a4, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a5, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a6) {
+    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9> Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> combine(@NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a1, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a2, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a3, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a4, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a5, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a6) {
         return new Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8, T9 t9) {
@@ -2329,7 +2329,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9> Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> combine(@NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a1, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a2, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a3, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a4, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a5, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a6, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a7) {
+    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9> Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> combine(@NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a1, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a2, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a3, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a4, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a5, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a6, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a7) {
         return new Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8, T9 t9) {
@@ -2359,7 +2359,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9> Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> combine(@NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a1, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a2, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a3, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a4, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a5, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a6, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a7, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a8) {
+    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9> Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> combine(@NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a1, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a2, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a3, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a4, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a5, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a6, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a7, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a8) {
         return new Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8, T9 t9) {
@@ -2391,7 +2391,7 @@ public class Actions {
      */
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9> Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> combine(@NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a1, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a2, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a3, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a4, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a5, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a6, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a7, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a8, @NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> a9) {
+    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9> Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> combine(@NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a1, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a2, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a3, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a4, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a5, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a6, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a7, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a8, @NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> a9) {
         return new Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8, T9 t9) {
@@ -2417,7 +2417,7 @@ public class Actions {
     @SafeVarargs
     @CheckResult
     @NonNull
-    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9> Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> combine(@NonNull final Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9>... a) {
+    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9> Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9> combine(@NonNull final Action9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9>... a) {
         return new Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9>() {
             @Override
             public void call(T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8, T9 t9) {
