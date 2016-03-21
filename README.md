@@ -6,7 +6,6 @@ RxJava static helper methods for combining multiple actions into single action s
 Download
 --------
 
-WARNING: Not available yet, pending on sonatype
 ```groovy
 compile 'com.vladimirlichonos.rxactions:rxactions:0.1.0'
 ```
@@ -27,9 +26,3 @@ License
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-
-
-
-
-
- [rxbinding]: https://github.com/JakeWharton/RxBinding
