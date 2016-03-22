@@ -9,6 +9,9 @@ apply plugin: 'com.android.library'
 dependencies {
     compile rootProject.ext.rxJava
     compile rootProject.ext.supportAnnotations
+
+    testCompile rootProject.ext.junit
+    testCompile rootProject.ext.mockito
 }
 
 android {
