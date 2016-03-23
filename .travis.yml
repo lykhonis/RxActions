@@ -1,33 +1,33 @@
 language: android
 
 android:
-    components:
-        - build-tools-23.0.1
-        - android-23
-        - extra-android-m2repository
-        - sys-img-armeabi-v7a-android-18
+  components:
+  - build-tools-23.0.1
+  - android-23
+  - extra-android-m2repository
+  - sys-img-armeabi-v7a-android-18
 
 jdk:
-    - oraclejdk8
+- oraclejdk8
 
 script:
-    - ./gradlew ":$MODULE:build" ":$MODULE:test"
+- ./gradlew ":$MODULE:build" ":$MODULE:test"
 
 after_success:
-    - .buildscript/deploy_snapshot.sh
+- .buildscript/deploy_snapshot.sh
 
 env:
-    matrix:
-        - MODULE=rxactions
-    global:
-        - secure: "dSip7OYgrJEjBBY4GdSuP77GjOuJaK6xTyA1SPutAjQ+f06bN6KXh9TCoEr7Nz8H/Vgjv/LxM620HfDCBK361jRmu66phkuyX6f3/3F6vIjUvxuHml4r+FTFirzbItHs6DLeo6XtokcrGuSwl2dS7VLcK0pK+y1+W7eZC90VXBBNsf5ZCsYotcxw8rmf2+GwBszjrEWucozULdLbEyTfxXRlEvsnbIwKDHkWyq027R+k86E6hau4Ch5zMdB/NfRNpvrQPCCAj3jpw9OQ2lBiANjq3+KOO6J2XqTtcVBRKWG52KSIEHPnSg6ei96UK0FQZLpbGTfbkbDhPrsWRuAUO3TnrpEbZ6E/RTSZvtyU77Q70oHjIImfE1IiwNL/mY6IqnB6/YMbTY++75ZKIUezv1ZHwiYMW23OSPsxhrArtBGWNGz+yk53eouPHZpRE7kXct3usJFukUlZHAs6cZqu8n62qYpA6LRH3fJ5B86k8vAn4c3kt9wyGiG9p5gk3ArgJ8TqAHxZXDVN1sdwuRWF7LZCo+AzXKUnpriH3SE560ZVkbjg4ZGRdLJ3BSnlpFYM+roVVkPP2SbGpzqy5728saY012++/6hhDQunTq18ir0hSAgMHb/EVTJ75Sl70JQdEzxd9BcbxFnCGV/VfzPSP3LHLVmkxnaa/CxEM6pxzzk="
-        - secure: "U0S+5iePY4z1xuwHBAwTw+aseaN4O3BcPSeNSRnE89Iv6fZbOaXgOWxwbN0XGMiq3Dj86MFb/d2kzXdlfQt3bF2KFjJQ6TVgxqdp8vWMVkTbBjG7/0N/FxZ8rDG9Nod61QtuBtYkWrAitZBy+1NhwkATQNGfVa4a4ct044dUHqjZzq3Iu9IVpc8M4HJShspfU0z7riMR5snepiQLK2LsEf6SWdYJjUyQ1TTwC+hnKqPL0OLXGmE3z1wg9+woIs76f2kj1oSkeLT5PME76kVXpgLsdBdaf74fviQPePkGmenFkuZ0HinAe1ogfbgTCWMNNGwIJL8xe+DmdpGsHVUoFBLZUZHGbEZFkqoqEv8jpNXlLaLMgAg+k3LB2wn08jsODVd8GW1UHHbAlD7/vjSzKJcU08tPmMDMS2iycsdGnYSZx2/9NiMtjWIGx+jFQVfjTbyf44dFPLCMp+eR5X9tDT+halwNrV7K95JNNeNYFh1jOOpHI5HztdlJ+CUW09MbiG6iIBf/crVpimO49h9G64E7LQiAtzaTZwAL40xXHg3ZTY8RZiyzUxT9wcjj45+yYb9RSB6H2/+iKfU+ECVj042lx/spE4y2ReAAC8WP7TsuqbHspRfR9pHAAl9WVXQtGquuziU/lfBsYP0sf7hF4FlLb7Km29RQf2BSnCs2shU="
+  matrix:
+  - MODULE=rxactions
+  global:
+  - secure: oUmY/gm0uAL58/c15oLBQRgE3SanM/x9abp/FeginUr1yh6PrMAPp/HVUsgPykKVCO2ARoMfxPnQC0NGkHBVHr6DSUz6iOK1RdiOtkhTgsHGPghK6fqd7u6SNWQijztYKrmuWagIwUP9X/bw/3Z1rieLr9f3IlMZmcqNuk+asHjfBOf2OAoK0ntbXQi0YXZ57d7PJI7/5zm2LHKDPij8KAsr8oNvfAR4qZhq+IHIpLWE84cQwqK6FlN/bh9954e7OTVNqiHvEZGBLH0H8Y5fhH7ajBpbcjertPrQKgmea7ug5P3QLBejWCbslc7/K4TmIT+N1hOY+D+z7jAPruvsbOIwk5xFijcc6c/nZGR0CYkgoSWEW1xUQ0bkEcQx4dfpPccILZAz8PkXsASQOCpjmSNJgaLUJl5Ck2BJGp4ASao5PdMBbVNvjNxATw7+bH1NSMc0eEvh69z6n1A8LUxW7xcN8OOi2YDCns8TofR8H0KZFMf+XXjhbJsNP7XwY6y60svUoerxE81uNDlx31l8jJ3PNw68i12c5BpGrLmB+D8hkFklG/pqX3kNGfNtED7NVR0UAig8FIpe8VOJ/qI1Y/ueaHHWTPc/zswGP4iHG2wCubDauXCv+78RTMAJMDrXJ34hF1/VejmMWBHZfOv1FEZVA/D5OS/974+nlAW1a7E=
+  - secure: SU7IyPtjxUs7vQMenU0MBt3CBsI8I3FTCbnXJOBYqT1yAqocyT2qEPahK+pZCRmffJTRhmcW94mGlFudXx1+Sr3O6/iNjwI6LISzlNkOqHc2cPoRxJvT32YF0Ql0WYb0iQ53OAL+NLOFXw6NXHef4uB/bYzUjQ/RthMCks65/vYs9gMUAQBexAIi35VI9yfqEJep7a7lG3yryCvMTuxDDivHDhJo1OSmdjKsGvFn0SP6KjItFV0Hmb1v1ERafFIwzWLENlyjOsw0CqJi9YrQSCLU1bY+RoApMm1wmABaadDGPsGAPqMf+03XMgnAs8dcGpAktTdq66d0709k4ahDWsF4wKziz+zcM1nEX9Q899A9CJ1/RQYgFkQVkDJvv/M5WbcprX8K5Jhs5+1/ocdGMgTHcmeYTaUYc2d1xtM63PK+fj3a2Kc7b08sNwMaw1pjJWo/d1aBmg+kX0x43zDg1XGL6bPf8XUcy2z3PEmqGxXjWxpYoCC7z16LARhSIdN9uCYjnFUExt3k7VijgH7gXXmvyT5CLLp5cDkK8f2IFytwB+YgKVmxcZ+vbrYr6VciRqB4Xs9zNgypgddJJRiF4s3EUCJBEQEPdyE7ApVNT8HO03mmoJwn4UXPu3LRTLHEaqCSoTRF523cDbErPKZUJae60JwznmFE9FjD7Fiqiag=
 
 sudo: false
 
 notifications:
-    email: false
+  email: false
 
 cache:
-    directories:
-        - $HOME/.gradle
+  directories:
+  - $HOME/.gradle
