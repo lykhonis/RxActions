@@ -1,0 +1,20 @@
+language: java
+
+jdk:
+    - oraclejdk7
+
+script:
+    - ./gradlew ":$MODULE:build" ":$MODULE:test"
+
+env:
+    matrix:
+        - MODULE=rxactions
+
+sudo: false
+
+notifications:
+    email: false
+
+cache:
+    directories:
+        - $HOME/.gradle
