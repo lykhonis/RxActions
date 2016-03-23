@@ -1,10 +1,13 @@
-language: java
+language: android
 
 jdk:
     - oraclejdk7
 
 script:
     - ./gradlew ":$MODULE:build" ":$MODULE:test"
+
+after_success:
+    - .buildscript/deploy_snapshot.sh
 
 env:
     matrix:
